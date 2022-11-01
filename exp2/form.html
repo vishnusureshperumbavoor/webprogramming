@@ -1,0 +1,80 @@
+<head>
+	<title>personal</title>
+</head>
+<style>
+form{
+	margin-top:5%;
+	margin-left:35%;
+	
+}
+table{
+	background-color:#f2f2f2;
+	padding:4%;
+	border-radius:5%;
+}
+th{
+	text-align:right;
+	vertical-align:top;
+}
+td{
+	text-align:left;
+}
+</style>
+<body>
+<form>
+	<table>
+	<tr>
+		<td colspan="2"><h1>PERSONAL INFORMATION</h1></td>
+	</tr>
+	<tr>
+		<th><label>Name</label></th>
+		<td><input type="name" name="name"/><br></td>
+	</tr>
+	<tr>
+		<th><label>DOB</label></th>
+		<td><input type="date" name="dob"/><br></td>
+	</tr>
+	<tr>
+		<th><label>PhNo</label></th>
+		<td><input type="tel" name="phone"/><br></td>
+	</tr>
+	<tr>
+		<th><label>Email</label></th>
+		<td><input type="email" name="email"/><br></td>
+	</tr>
+	<tr>
+		<th><label>Address</label></th>
+		<td><textarea name="address" rows="4" cols="50"></textarea><br></td>
+	</tr>
+	<tr>
+		<th><label>Gender</label></th>
+		<td>
+			<input type="radio" id="gender" name="gender"/>Male<br>
+			<input type="radio" id="gender" name="gender"/>Female<br>
+			<input type="radio" id="gender" name="gender"/>Trans<br>
+		</td>
+	</tr>
+	<tr>
+		<th><label>Qualification</label></th>
+		<td><input type="checkbox" id="qualify" name="qualification"/>SSLC<br>
+		<input type="checkbox" id="qualify" name="qualification"/>+2<br>
+		<input type="checkbox" id="qualify" name="qualification"/>Others<br></td>
+	</tr>
+	<tr>
+		<th><label>district</label></th>
+		<td>
+			<select name="district" >
+				<option>Ernakulam</option>
+				<option>Thrissur</option>
+				<option>Kannur</option>
+			</select><br>
+		</td>
+	</tr>
+	<tr>
+		<th></th>
+		<td><input type="submit" value="submit">
+		<input style="margin-left:15%;"type="reset" value="reset"></td>
+	</tr>
+	</table>
+</form>
+</body>
