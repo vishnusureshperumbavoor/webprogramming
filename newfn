@@ -1,9 +1,0 @@
-ECHO ENTER
-READ F
-IF [ -E $F -A -F $F ]
-THEN
-ECHO $F
-TR A-Z A-Z <$F> N
-CAT N
-ELSE 
-
