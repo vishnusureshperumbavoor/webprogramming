@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num1 = parseInt(prompt("enter number 1"))
+        num2 = parseInt(prompt("enter number 2"))
+        op = prompt("enter the operator")
+        switch(op){
+            case '+':
+                result = num1+num2;
+                alert(num1 + op + num2 + " = " + result);
+                break;
+            case '-':
+                result = num1-num2;
+                alert(num1 + op + num2 + " = " + result);
+                break;
+            case '*':
+                result = num1*num2;
+                alert(num1 + op + num2 + " = " + result);
+                break;
+            case '/':
+                result = num1/num2;
+                alert(num1 + op + num2 + " = " + result);
+                break;
+            case '%':
+                result = num1%num2;
+                alert(num1 + op + num2 + " = " + result);
+                break;
+            default:
+                alert("enter valid operator");
+                break;
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      day = new Date();
+      hour = day.getHours();
+      document.write(day, "</br>");
+      document.write(hour, "</br>");
+      if(hour >= 6 && hour < 12){
+        document.write("good morning")
+      }
+      else if(hour>=12 && hour<16 ){
+        document.write("good afternoon")
+      }
+      else if(hour>=16 && hour<20 ){
+        document.write("good evening")
+      }
+      else{
+        document.write("good night")
+      }
+    </script>
+  </body>
+</html>

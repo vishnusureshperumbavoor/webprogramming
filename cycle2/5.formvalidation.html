@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function formValidate() {
+      name = document.getElementById.value;
+      password = document.getElementById.value;
+      if (name == null) {
+        alert("name should not be empty");
+        return false;
+      } 
+    }
+  </script>
+  <body>
+    <form action="" onSubmit="return formValidate()" method="post">
+      <label for="">Name : </label>
+      <input id="name" type="text" /><br /><br />
+
+      <label for="">Password : </label>
+      <input id="password" type="password" /><br /><br />
+
+      <input type="submit" value="Submit" /><br />
+    </form>
+  </body>
+</html>
