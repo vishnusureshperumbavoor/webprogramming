@@ -8,12 +8,13 @@
   </head>
   <script>
     function formValidate() {
-      name = document.getElementById.value;
-      password = document.getElementById.value;
-      if (name == null) {
+      if (document.getElementById("name").value == "") {
         alert("name should not be empty");
         return false;
-      } 
+      } else if (document.getElementById("password").value == "") {
+        alert("password should not be empty");
+        return false;
+      }
     }
   </script>
   <body>
