@@ -8,22 +8,40 @@
   </head>
   <script>
     function formValidate() {
-      if (document.getElementById("name").value == "") {
+      name = document.getElementById("name").value;
+      password = document.getElementById("password").value;
+      retypepass = document.getElementById("retypepass").value;
+      if (name == "") {
         alert("name should not be empty");
         return false;
-      } else if (document.getElementById("password").value == "") {
+      } else if (password == "") {
         alert("password should not be empty");
         return false;
+      } else if (password.length < 3) {
+        alert("password should be greater then 3 characters");
+        return false;
+      } else if (retypepass == "") {
+        alert("retype password should not be empty");
+        return false;
+      } else if (password != retypepass) {
+        alert("passwords are not equal");
+        return false;
+      } else {
+        alert("signup successful");
+        return true;
       }
     }
   </script>
   <body>
-    <form action="" onSubmit="return formValidate()" method="post">
+    <form onSubmit="return formValidate()">
       <label for="">Name : </label>
       <input id="name" type="text" /><br /><br />
 
       <label for="">Password : </label>
       <input id="password" type="password" /><br /><br />
+
+      <label for="">Retype Password : </label>
+      <input id="retypepass" type="password" /><br /><br />
 
       <input type="submit" value="Submit" /><br />
     </form>
