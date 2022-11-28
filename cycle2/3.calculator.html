@@ -14,28 +14,29 @@
         switch(op){
             case '+':
                 result = num1+num2;
-                alert(num1 + op + num2 + " = " + result);
+                //alert(num1 + op + num2 + " = " + result);
                 break;
             case '-':
                 result = num1-num2;
-                alert(num1 + op + num2 + " = " + result);
+                //alert(num1 + op + num2 + " = " + result);
                 break;
             case '*':
                 result = num1*num2;
-                alert(num1 + op + num2 + " = " + result);
+                //alert(num1 + op + num2 + " = " + result);
                 break;
             case '/':
                 result = num1/num2;
-                alert(num1 + op + num2 + " = " + result);
+                //alert(num1 + op + num2 + " = " + result);
                 break;
             case '%':
                 result = num1%num2;
-                alert(num1 + op + num2 + " = " + result);
                 break;
             default:
                 alert("enter valid operator");
                 break;
-            
+        }
+        if(result){
+            alert(num1 + op + num2 + " = " + result);
         }
     </script>
 </body>

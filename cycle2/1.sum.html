@@ -10,11 +10,43 @@
   <body>
     <script>
       sum = 0;
-      number = parseInt(prompt("Enter a positive integer: "));
-      for (i = 1; i <= number; i++) {
+      num = parseInt(prompt("Enter a positive integer: "));
+      for (i = 1; i <= num; i++) {
         sum += i;
       }
-      document.write("<b>The sum of natural numbers : ", sum,"</b>");
+      document.write(
+        "<b>The sum of first ",
+        num,
+        " natural numbers using forloop : ",
+        sum,
+        "</b></br>"
+      );
+
+      (i = 1), (sum = 0);
+      while (i <= num) {
+        sum += i;
+        i++;
+      }
+      document.write(
+        "<b>The sum of first ",
+        num,
+        " natural numbers using while loop : ",
+        sum,
+        "</b></br>"
+      );
+
+      (i = 1), (sum = 0);
+      do {
+        sum += i;
+        i++;
+      } while (i <= num);
+      document.write(
+        "<b>The sum of first ",
+        num,
+        " natural numbers using do while loop : ",
+        sum,
+        "</b>"
+      );
     </script>
   </body>
 </html>
