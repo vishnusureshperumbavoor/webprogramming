@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="checkboxform" onsubmit="return checkterms()">
+      <input type="checkbox" name="terms" />
+      <span> I accept the terms and conditions</span><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
+<script>
+  function checkterms() {
+    if (checkboxform.terms.checked == false) {
+      alert("please accept the terms and conditions");
+      return false;
+    } else {
+      alert("submission successful");
+      return true;
+    }
+  }
+</script>

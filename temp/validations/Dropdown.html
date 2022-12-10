@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="dropdownform" onsubmit="return checkdropdown()">
+      Select your branch
+      <select name="branchform" id="branchid">
+        <option>Select</option>
+        <option>Computer</option>
+        <option>Electronics</option>
+        <option>Mechanical</option></select
+      ><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
+<script>
+  function checkdropdown() {
+    if (document.dropdownform.branchform.selectedIndex == false) {
+      alert("please select your branch");
+      return false;
+    } else {
+      branch = document.getElementById("branchid");
+      branchname = branch.options[branch.selectedIndex].text;
+      alert("You have selected " + branchname);
+      return true;
+    }
+  }
+</script>
