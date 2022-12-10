@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <body>
+    <form onSubmit="return formValidate()">
+      <label for="">Name : </label>
+      <input id="name" type="text" /><br /><br />
+
+      <label for="">Password : </label>
+      <input id="password" type="password" /><br /><br />
+
+      <label for="">Retype Password : </label>
+      <input id="retypepass" type="password" /><br /><br />
+
+      <input type="submit" value="Submit" /><br />
+    </form>
+  </body>
+</html>
   <script>
     function formValidate() {
       name = document.getElementById("name").value;
@@ -32,18 +47,3 @@
       }
     }
   </script>
-  <body>
-    <form onSubmit="return formValidate()">
-      <label for="">Name : </label>
-      <input id="name" type="text" /><br /><br />
-
-      <label for="">Password : </label>
-      <input id="password" type="password" /><br /><br />
-
-      <label for="">Retype Password : </label>
-      <input id="retypepass" type="password" /><br /><br />
-
-      <input type="submit" value="Submit" /><br />
-    </form>
-  </body>
-</html>

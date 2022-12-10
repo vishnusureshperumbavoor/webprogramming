@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enter marks of the student for 3 subjects out of 100</h1>
+    <label for="">Mathematics </label>
+    <input type="text" id="sub1" /><br /><br />
+    <label for="">Physics </label>
+    <input type="text" id="sub2" /><br /><br />
+    <label for="">Chemistry </label>
+    <input type="text" id="sub3" /><br /><br />
+    <button onClick="findGrade()">Find Grade</button>
+    <h3>
+      Total Marks :
+      <span id="marks"></span>
+    </h3>
+    <h3>
+      Percentage :
+      <span id="per"></span>
+    </h3>
+    <h3>
+      Grade :
+      <span id="grade"></span>
+    </h3>
+  </body>
+  <script>
+    function findGrade() {
+      sub1 = parseInt(document.getElementById("sub1").value);
+      sub2 = parseInt(document.getElementById("sub2").value);
+      sub3 = parseInt(document.getElementById("sub3").value);
+      if (sub1 > 100 || sub2 > 100 || sub3 > 100) {
+        alert("enter valid marks");
+      } else {
+        totalmark = parseInt(sub1 + sub2 + sub3);
+        document.getElementById("marks").innerHTML = totalmark + "/300";
+
+        per = (totalmark * 100) / 300;
+        // num.toFixed() is used to avoid decimal points
+        document.getElementById("per").innerHTML = per.toFixed() + "%";
+
+        // Math.trunc(num) is used to avoid decimal points
+        switch (Math.trunc(per / 10)) {
+          case 10:
+            document.getElementById("grade").innerHTML = "S";
+            break;
+          case 9:
+            document.getElementById("grade").innerHTML = "S";
+            break;
+          case 8:
+            document.getElementById("grade").innerHTML = "A";
+            break;
+          case 7:
+            document.getElementById("grade").innerHTML = "B";
+            break;
+          case 6:
+            document.getElementById("grade").innerHTML = "C";
+            break;
+          case 5:
+            document.getElementById("grade").innerHTML = "D";
+            break;
+          default:
+            document.getElementById("grade").innerHTML = "Failed";
+            break;
+        }
+      }
+    }
+  </script>
+</html>

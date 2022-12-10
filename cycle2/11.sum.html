@@ -11,42 +11,30 @@
     <script>
       sum = 0;
       num = parseInt(prompt("Enter a positive integer: "));
+      document.write("<h1>Forloop</h1>");
       for (i = 1; i <= num; i++) {
+        document.write(i, "\t");
         sum += i;
       }
-      document.write(
-        "<b>The sum of first ",
-        num,
-        " natural numbers using forloop : ",
-        sum,
-        "</b></br>"
-      );
+      document.write("<br><h2>Sum =  ", sum, "</h2>");
 
+      document.write("<br><h1>While loop</h1>");
       (i = 1), (sum = 0);
       while (i <= num) {
+        document.write(i, "\t");
         sum += i;
         i++;
       }
-      document.write(
-        "<b>The sum of first ",
-        num,
-        " natural numbers using while loop : ",
-        sum,
-        "</b></br>"
-      );
+      document.write("<br><h2>Sum = ", sum, "</h2>");
 
+      document.write("<br><h1>Do While loop</h1>");
       (i = 1), (sum = 0);
       do {
+        document.write(i, "\t");
         sum += i;
         i++;
       } while (i <= num);
-      document.write(
-        "<b>The sum of first ",
-        num,
-        " natural numbers using do while loop : ",
-        sum,
-        "</b>"
-      );
+      document.write("<br><h2>Sum = ", sum, "</h2>");
     </script>
   </body>
 </html>
