@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
   <body>
     <h1>Enter marks of the student for 3 subjects out of 100</h1>
     <label for="">Mathematics </label>
@@ -46,27 +40,28 @@
         // Math.trunc(num) is used to avoid decimal points
         switch (Math.trunc(per / 10)) {
           case 10:
-            document.getElementById("grade").innerHTML = "S";
+            grade = "S";
             break;
           case 9:
-            document.getElementById("grade").innerHTML = "S";
+            grade = "S";
             break;
           case 8:
-            document.getElementById("grade").innerHTML = "A";
+            grade = "A";
             break;
           case 7:
-            document.getElementById("grade").innerHTML = "B";
+            grade = "B";
             break;
           case 6:
-            document.getElementById("grade").innerHTML = "C";
+            grade = "C";
             break;
           case 5:
-            document.getElementById("grade").innerHTML = "D";
+            grade = "D";
             break;
           default:
-            document.getElementById("grade").innerHTML = "Failed";
+            grade = "Failed";
             break;
         }
+        document.getElementById("grade").innerHTML = grade
       }
     }
   </script>
