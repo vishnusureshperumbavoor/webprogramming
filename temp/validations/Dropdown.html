@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
   <body>
-    <form name="dropdownform" onsubmit="return checkdropdown()">
+    <form name="formname" onsubmit="return checkdropdown()">
       Select your branch
-      <select name="branchform" id="branchid">
+      <select name="selectname" id="branchid">
         <option>Select</option>
         <option>Computer</option>
         <option>Electronics</option>
@@ -21,7 +15,7 @@
 </html>
 <script>
   function checkdropdown() {
-    if (document.dropdownform.branchform.selectedIndex == false) {
+    if (document.formname.selectname.selectedIndex == false) {
       alert("please select your branch");
       return false;
     } else {
